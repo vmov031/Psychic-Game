@@ -16,14 +16,11 @@ var computerGuess = letters[Math.floor(Math.random() * letters.length)];
 // Process/store info of user selection
 document.onkeyup = function(event) {
 	var userGuess = event.key;
-
-
 }
 
-//User selects a letter which updates guessesLeft, guessesMade, and wins or losses.
+//User guess updates guessesLeft, guessesMade, and wins or losses.
 $("alreadyguessed").on("click", function() {
 	guessesMade = $(this).attr("letters");
-	
 }
 // is the above the same as this function but in jquery? 
 function updateGuessesMade() {
@@ -39,7 +36,7 @@ function updateGuessesLeft() {
 
 function determineMatch() {
 	if (letters <= ())
-		wins += 
+		wins += i;
 }
 
 if (userGuess === computerGuess) {
